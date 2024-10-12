@@ -1,3 +1,5 @@
 export default function Page() {
-  return <h1> hello Areum!!! </h1>
+  return <div>
+    <h1>Main!</h1>
+  </div>
 }
