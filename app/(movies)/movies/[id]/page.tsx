@@ -4,7 +4,6 @@ import MovieVideos from '../../../../components/movie-videos';
 
 export default async function MovieDetail({params: {id}}: { params: {id:string}}) {
   return (<div>
-    <h1>Movie {id} </h1>
     <Suspense fallback={<h1>Loading movie info</h1>}>
       <MovieInfo id={id} />
     </Suspense>
