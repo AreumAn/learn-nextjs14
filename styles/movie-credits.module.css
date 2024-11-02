@@ -1,0 +1,40 @@
+.wrapper {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: black;
+}
+
+.credits {
+  position: absolute;
+  top: 100%;  /* Changed from bottom: -100% to top: 100% */
+  width: 100%;
+  animation: scrollCredits 30s linear infinite;
+  text-align: center;
+}
+
+.creditItem {
+  margin: 20px 0;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.character {
+  display: block;
+  font-size: 1.2em;
+  color: #ffd700;
+}
+
+.name {
+  display: block;
+  font-size: 1em;
+}
+
+@keyframes scrollCredits {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200%);  /* Changed from -100% to -200% */
+  }
+}
